@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FinanceLatest.View.PostsPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FinanceLatest.View.PostsPage" xmlns:vm="clr-namespace:FinanceLatest.ViewModel">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+             <vm:PostsVM x:Key="vm"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Share" Command="{Binding Source={StaticResource vm}, Path=ShareCommand}"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
        <WebView x:Name="webView"/>
     </ContentPage.Content>
