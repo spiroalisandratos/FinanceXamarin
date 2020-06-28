@@ -12,7 +12,7 @@ namespace FinanceLatest.View
     public partial class PostsPage : ContentPage
     {
         PostsVM postsVM;
-        Command shareCommand;
+        
         public PostsPage()
         {
             InitializeComponent();

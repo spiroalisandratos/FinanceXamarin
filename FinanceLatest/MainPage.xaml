@@ -20,6 +20,7 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <ListView BindingContext="{StaticResource vm}"
+                  BackgroundColor="White"
                   CachingStrategy="RecycleElement"
                   SeparatorVisibility="None"
                   HasUnevenRows="true"
